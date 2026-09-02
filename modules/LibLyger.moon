@@ -290,7 +290,7 @@ class LibLyger
 
             this_state_table[i] = temp_line_table
         return this_state_table
-    interpolate: (this_table, start_state_table, end_state_table, factor, preset) ->
+    interpolate: (this_table, start_state_table, end_state_table, factor, preset, colorspace) ->
         this_current_state = {}
 
         rebuilt_text = for k, val in ipairs this_table
@@ -306,7 +306,7 @@ class LibLyger
                             util.interpolate_alpha factor, tval_start, tval_end
                         when "color"
                             -- util.interpolate_color factor, tval_start, tval_end
-                            colorutil.interp_lab factor, tval_start, tval_end
+                            colorutil["interp_#{colorspace\lower!}"] factor, tval_start, tval_end
                         when "number", "angle"
                             nstart, nend = tonumber(tval_start), tonumber(tval_end)
                             if tag_type == "angle" and preset.c.flip_rot

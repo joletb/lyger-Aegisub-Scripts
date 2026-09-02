@@ -109,7 +109,7 @@ tags_grouped = {
 tags_flat = list.join unpack tags_grouped
 
 -- default settings for every preset
-preset_defaults = { skiptext: false, flip_rot: false, accel: 1.0,
+preset_defaults = { skiptext: false, flip_rot: false, colorspace: "RGB", accel: 1.0,
                     tags: {tag, false for tag in *tags_flat }
 }
 
@@ -146,7 +146,11 @@ create_dialog = (preset) ->
         { name: "preset_select", class: "dropdown",  x: 2, y: 11, width: 2, height: 1,
           items: preset_names, value: preset.section[#preset.section]                  },
         { name: "preset_modify", class: "dropdown",  x: 4, y: 11, width: 2, height: 1,
-          items: {"Load", "Save", "Delete", "Rename"}, value: "Load" }
+          items: {"Load", "Save", "Delete", "Rename"}, value: "Load" },
+        {                        class: "label",     x: 0, y: 12, width: 2, height: 1,
+          label: "Color space: "                                                            },
+        { name: "colorspace", class: "dropdown",  x: 2, y: 12, width: 2, height: 1,
+          items: {"RGB", "LAB", "LCH", "OKLAB", "OKLCH", "XYZ"}, value: preset.c.colorspace },                  
     }
 
     -- generate tag checkboxes
@@ -339,7 +343,7 @@ frame_transform = (sub, sel, res) ->
 
         --Interpolate all the relevant parameters and insert
         this_line.text = LibLyger.interpolate this_table, start_state_table, end_state_table,
-                                              factor, preset
+                                              factor, preset, preset.c.colorspace
         sub[sel[i]] = this_line
 
 
