@@ -79,14 +79,14 @@ iclip support
 
 export script_name = "Frame-by-frame transform"
 export script_description = "Smoothly transforms between the first and last selected lines."
-export script_version = "2.0.1"
+export script_version = "2.0.2"
 export script_namespace = "lyger.FbfTransform"
 
 DependencyControl = require "l0.DependencyControl"
 rec = DependencyControl{
-    feed: "https://raw.githubusercontent.com/TypesettingTools/lyger-Aegisub-Scripts/master/DependencyControl.json",
+    feed: "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/master/DependencyControl.json",
     {
-        {"lyger.LibLyger", version: "2.0.0", url: "http://github.com/TypesettingTools/lyger-Aegisub-Scripts"},
+        {"lyger.LibLyger", version: "2.0.0", url: "http://github.com/joletb/lyger-Aegisub-Scripts"},
         {"l0.Functional", version: "0.3.0", url: "https://github.com/TypesettingTools/ASSFoundation",
          feed: "https://raw.githubusercontent.com/TypesettingTools/Functional/master/DependencyControl.json"},
     }

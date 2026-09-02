@@ -1,3 +1,15 @@
+local DependencyControl = require("l0.DependencyControl")
+local version = DependencyControl({
+  name = "color",
+  version = "1.0.0",
+  description = "Library of interpolation functions for commonly used color spaces.",
+  author = "The0x539",
+  url = "http://github.com/joletb/lyger-Aegisub-Scripts",
+  moduleName = "0x.color",
+  feed = "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/master/DependencyControl.json",
+})
+
+
 local function XYZfromRGB(r, g, b)
 	r, g, b = r/0xFF, g/0xFF, b/0xFF
 
@@ -360,7 +372,7 @@ local function lighten_ass(c, amount)
 	return fmt_ass_color(r, g, b)
 end
 
-return {
+color = {
 	interp_lch = interp_lch,
 	interp_lab = interp_lab,
 	interp_oklab = interp_oklab,
@@ -378,3 +390,6 @@ return {
 	lighten = lighten_ass,
 	lighten_complex = lighten,
 }
+
+color.version = version
+return version:register(color)

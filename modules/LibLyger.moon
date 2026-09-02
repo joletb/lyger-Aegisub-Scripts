@@ -12,18 +12,17 @@ The filename is a bit vain, perhaps, but I couldn't come up with anything else.
 DependencyControl = require("l0.DependencyControl")
 version = DependencyControl{
     name: "LibLyger",
-    version: "2.0.3",
+    version: "2.0.4",
     description: "Library of commonly used functions across all of lyger's automation scripts.",
     author: "lyger",
-    url: "http://github.com/TypesettingTools/lyger-Aegisub-Scripts",
+    url: "http://github.com/joletb/lyger-Aegisub-Scripts",
     moduleName: "lyger.LibLyger",
-    feed: "https://raw.githubusercontent.com/TypesettingTools/lyger-Aegisub-Scripts/master/DependencyControl.json",
+    feed: "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/master/DependencyControl.json",
     {
-        "aegisub.util", "karaskel"
+        "aegisub.util", "karaskel", "0x.color"
     }
 }
-util = version\requireModules!
-colorutil = require "color"
+util, line, colorutil = version\requireModules!
 
 class LibLyger
     msgs = {
