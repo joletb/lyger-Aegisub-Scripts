@@ -23,6 +23,7 @@ version = DependencyControl{
     }
 }
 util = version\requireModules!
+colorutil = require "color"
 
 class LibLyger
     msgs = {
@@ -304,7 +305,8 @@ class LibLyger
                         when "alpha"
                             util.interpolate_alpha factor, tval_start, tval_end
                         when "color"
-                            util.interpolate_color factor, tval_start, tval_end
+                            -- util.interpolate_color factor, tval_start, tval_end
+                            colorutil.interp_lab factor, tval_start, tval_end
                         when "number", "angle"
                             nstart, nend = tonumber(tval_start), tonumber(tval_end)
                             if tag_type == "angle" and preset.c.flip_rot
