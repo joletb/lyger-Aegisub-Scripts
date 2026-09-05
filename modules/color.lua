@@ -4,9 +4,9 @@ local version = DependencyControl({
   version = "1.0.0",
   description = "Library of interpolation functions for commonly used color spaces.",
   author = "The0x539",
-  url = "http://github.com/joletb/lyger-Aegisub-Scripts",
+  url = "https://github.com/TypesettingTools/lyger-Aegisub-Scripts",
   moduleName = "0x.color",
-  feed = "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/master/DependencyControl.json",
+  feed = "https://raw.githubusercontent.com/TypesettingTools/lyger-Aegisub-Scripts/master/DependencyControl.json",
 })
 
 

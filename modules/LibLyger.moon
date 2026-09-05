@@ -15,9 +15,9 @@ version = DependencyControl{
     version: "2.0.4",
     description: "Library of commonly used functions across all of lyger's automation scripts.",
     author: "lyger",
-    url: "http://github.com/joletb/lyger-Aegisub-Scripts",
+    url: "https://github.com/TypesettingTools/lyger-Aegisub-Scripts",
     moduleName: "lyger.LibLyger",
-    feed: "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/master/DependencyControl.json",
+    feed: "https://raw.githubusercontent.com/TypesettingTools/lyger-Aegisub-Scripts/master/DependencyControl.json",
     {
         "aegisub.util", "karaskel", "0x.color"
     }

@@ -62,9 +62,9 @@ export script_namespace = "lyger.GradientEverything"
 
 DependencyControl = require "l0.DependencyControl"
 rec = DependencyControl{
-    feed: "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/master/DependencyControl.json",
+    feed: "https://raw.githubusercontent.com/TypesettingTools/lyger-Aegisub-Scripts/master/DependencyControl.json",
     {
-        {"lyger.LibLyger", version: "2.0.1", url: "http://github.com/joletb/lyger-Aegisub-Scripts"},
+        {"lyger.LibLyger", version: "2.0.1", url: "https://github.com/TypesettingTools/lyger-Aegisub-Scripts"},
         {"l0.Functional", version: "0.3.0", url: "https://github.com/TypesettingTools/Functional",
          feed: "https://raw.githubusercontent.com/TypesettingTools/Functional/master/DependencyControl.json"},
         {"SubInspector.Inspector", version: "0.6.0", url: "https://github.com/TypesettingTools/SubInspector",

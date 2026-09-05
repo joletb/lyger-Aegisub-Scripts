@@ -2,8 +2,8 @@
   "dependencyControlFeedFormatVersion": "0.2.0",
   "name": "lyger's Automation Scripts",
   "description": "Main repository for all of lyger's automation scripts.",
-  "baseUrl": "https://github.com/joletb/lyger-Aegisub-Scripts",
-  "fileBaseUrl": "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/@{channel}/macros/@{namespace}",
+  "baseUrl": "https://github.com/TypesettingTools/lyger-Aegisub-Scripts",
+  "fileBaseUrl": "https://raw.githubusercontent.com/TypesettingTools/lyger-Aegisub-Scripts/@{channel}/macros/@{namespace}",
   "url": "@{baseUrl}",
   "maintainer": "lyger",
   "knownFeeds": {
@@ -210,7 +210,7 @@
             {
               "name": ".moon",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "EAEBA28485441648BBDF4F03CB756ECBFF6E8110"
+              "sha1": "7444B8FA4C42D2454DB31F6FCB012661238047E8"
             }
           ],
           "requiredModules": [
@@ -298,7 +298,7 @@
             {
               "name": ".moon",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "31E0FE62DD810418EA892F67641C04B8B7A40F8A"
+              "sha1": "0788F597964DECDC40A6AEC6FF25274F44B8C62D"
             }
           ],
           "requiredModules": [
@@ -676,7 +676,7 @@
       "author": "lyger",
       "name": "LibLyger",
       "description": "Library of commonly used functions across all of lyger's automation scripts.",
-      "fileBaseUrl": "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/@{channel}/modules/@{scriptName}",
+      "fileBaseUrl": "https://raw.githubusercontent.com/TypesettingTools/lyger-Aegisub-Scripts/@{channel}/modules/@{scriptName}",
       "channels": {
         "master": {
           "version": "2.0.4",
@@ -686,7 +686,7 @@
             {
               "name": ".moon",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "7BC2DB8EBC6988700626D249DBA4F5D8FB853B15"
+              "sha1": "35BD7DA8B7662D9C5A7DD3604F20AFE35E60EFA9"
             }
           ],
           "requiredModules": [
@@ -725,7 +725,7 @@
       "author": "The0x539",
       "name": "color",
       "description": "Library of interpolation functions for commonly used color spaces.",
-      "fileBaseUrl": "https://raw.githubusercontent.com/joletb/lyger-Aegisub-Scripts/@{channel}/modules/@{scriptName}",
+      "fileBaseUrl": "https://raw.githubusercontent.com/TypesettingTools/lyger-Aegisub-Scripts/@{channel}/modules/@{scriptName}",
       "channels": {
         "master": {
           "version": "1.0.0",
@@ -735,7 +735,7 @@
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "396A3AE23CE276B506BC7CCBCCCC5ECC70DA1666"
+              "sha1": "1DA5A21BCFE89CF40FC066DAB4C5A7DBB1DEA3CC"
             }
           ]
         }
