@@ -231,6 +231,9 @@
         }
       },
       "changelog": {
+        "2.0.2": [
+          "Add dropdown menu to switch between color spaces."
+        ],        
         "2.0.1": [
           "Fixed a minor isssue uncovered by Moonscript linter.",
           "Switched to maintained Functional library."
@@ -325,6 +328,9 @@
         }
       },
       "changelog": {
+        "2.0.5": [
+          "Add dropdown menu to switch between color spaces."
+        ],
         "2.0.4": [
           "Now extends clips to video edges."
         ],
@@ -703,6 +709,9 @@
         }
       },
       "changelog": {
+        "2.0.4": [
+          "Add support for more color spaces via the 0x.color library."
+        ],
         "2.0.3": [
           "Fixed some minor issues uncovered by the Moonscript linter."
         ],
